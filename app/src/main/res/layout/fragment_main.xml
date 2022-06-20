@@ -1,23 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+
     tools:context=".ui.main.PlaceholderFragment">
 
     <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        android:fontFamily="sans-serif-thin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintTop_creator="1" />
+
+    <androidx.cardview.widget.CardView
+       app:cardBackgroundColor="@color/black"
+
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:id="@+id/cardView1"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingVertical="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/section_label">
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:paddingHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="103dp"
+            android:scaleType="fitXY"
+            android:paddingTop="10dp"
+
+            android:src="@drawable/map_image1" />
+
+        <TextView
+
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:text="Ride Id: 002"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="Origin Station : 20" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="Station path : 23, 42, 45, 48, 56, 60, 77" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom"
+            android:text="Date : 15 Feb 2022 16:33" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="#FF000000"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/black"
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:paddingVertical="20dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1"
+
+      >
+
+        <ImageView
+            android:paddingHorizontal="20dp"
+            android:id="@+id/imageView03"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/map_image1" />
+
+        <TextView
+            android:id="@+id/textView05"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="bottom"
+            android:text="Ride Id: 003"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/textView06"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:text="Origin Station : 30" />
+
+        <TextView
+            android:id="@+id/textView07"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:text="Station path : 23, 42, 45, 48, 56, 60, 77" />
+
+        <TextView
+            android:id="@+id/textView08"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:text="Date : 15 Feb 2022 16:33" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/black"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="20dp"
+        app:cardBackgroundColor="@color/black"
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:paddingBottom="20dp"
+app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <ImageView
+            android:paddingHorizontal="20dp"
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:scaleType="fitXY"
+            android:paddingTop="10dp"
+            android:src="@drawable/map_image1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textColor="#FFFFFF"
+            android:paddingVertical="5dp"
+            android:layout_gravity="bottom"
+            android:text="Ride Id: 004"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+
+            android:text="Origin Station : 40"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="Station path : 23, 42, 45, 48, 56, 60, 77" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:text="Date : 15 Feb 2022 16:33" />
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

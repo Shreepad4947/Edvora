@@ -3,4 +3,15 @@
     <string name="tab_text_1">Nearest</string>
     <string name="tab_text_2">Upcoming</string>
     <string name="tab_text_3">Past</string>
+    <string name="profile_name">Shreepad Bhuvad</string>
+    <string name="rides">Rides:</string>
+    <string name="Filter">Filter</string>
+
+
+    <string-array name="states">
+        <item>Maharashtra</item>
+        <item>Goa</item>
+        <item>Karnataka</item>
+        <item>Kerala</item>
+    </string-array>
 </resources>
